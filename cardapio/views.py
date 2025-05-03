@@ -12,8 +12,6 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         """Return the last five published bolos."""
         return Bolos.objects.order_by("-pub_date")[:5]
-
-
-class DetailView(generic.DetailView):
-    model = Bolos
-    template_name = "cardapio/detail.html"
+    
+def docinhos(request):
+    return render(request, "cardapio/docinhos.html")

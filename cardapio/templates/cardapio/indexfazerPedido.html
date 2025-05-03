@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Doces da Sarah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <img id="phone" src="imagens/logo-mobile.png" alt="Logo Doces da Sarah. Contorno de um bolo de dois andares, com um coraçao rosa no topo.">
+        <img id="pc" src="imagens/logo-pc.png" alt="Logo Doces da Sarah. Contorno de um bolo de dois andares, com um coraçao rosa no topo.">
+        <i id= "menuburgue"class= "material-symbols-outlined" onclick="clickMenu()" >menu</i>
+        <menu id="menuburg">
+            <ul>
+                <li><a href="index.html">Cardápio</a></li>
+                <li><a href="fazerPedido.html">Fazer Pedido</a></li>
+                <li><a href="https://www.instagram.com/s2_docesdasarah?igshid=MmVlMjlkMTBhMg==" target="_blank">Instagram</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511981273027&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%8D%B0%F0%9F%A7%81" target="_blank">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <form onsubmit="form(event)">
+            <h1 id="pedido">Faça seu Pedido</h1>
+            <div id="massa">
+                <h2><img id ="heart"src="imagens/docesdarahCoracao-1.png" alt="">Escolha a Massa</h2>
+                <select name="opMassas" id="opMassas">
+                    <option value=""></option>
+                    <option value="Massa Branca">Massa Branca</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Cenoura">Cenoura</option>
+                    <option value="Pão de Mel">Pão de Mel</option>
+                </select>
+            </div>
+            <div id="recheio">
+                <h2 id="recehio"><img id ="heart"src="imagens/docesdarahCoracao-1.png" alt="">Escolha o Recheio</h2>
+                <select name="opRecheios" id="opRecheios">
+                    <option value=""></option>
+                    <option value="Brigadeiro">Brigadeiro</option>
+                    <option value="Doce de leite">Doce de leite</option>
+                    <option value="Prestígio">Prestígio</option>
+                    <option value="Ninho">Ninho</option>
+                    <option value="Ganache Branco">Ganache Branco</option>
+                    <option value="Ganache Ao Leite">Ganache Ao Leite</option>
+                    <option value="Ganache Meio Amargo">Ganache Meio Amargo</option>
+                </select>
+            </div>
+            <div id="cobertura">
+                <h2><img id ="heart"src="imagens/docesdarahCoracao-1.png" alt="">Escolha a Cobertura</h2>
+                <select name="opCoberturas" id="opCoberturas">
+                    <option value=""></option>
+                    <option value="Ganache">Ganache</option>
+                    <option value="Chantilly">Chantilly</option>
+                </select>
+            </div>
+            <div id="tamanho">
+                <h2><img id ="heart"src="imagens/docesdarahCoracao-1.png" alt="">Escolha o Tamanho</h2>
+                <select name="opTamanhos" id="opTamanhos">
+                    <option value=""></option>
+                    <option value="PP">PP – 1 Kg</option>
+                    <option value="P">P – 2 Kg</option>
+                    <option value="M">M – 3Kg</option>
+                    <option value="outro">outro</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" value="enviarPedido" onclick="enviarPedido()">Enviar Pedido</button>
+            </div>
+        </form>    
+    </main>        
+    <footer>
+        <p>Preços válidos a partir de julho de 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
